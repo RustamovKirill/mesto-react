@@ -2,7 +2,7 @@ import Header from "./Header";
 import Main from "./Main";
 import Footer from "./Footer";
 import { useState } from 'react'
-import PopupWIthForm from "./PopupWIthForm";
+import PopupWithForm from "./PopupWithForm";
 import ImagePopup from "./ImagePopup";
 
 function App() {
@@ -50,7 +50,7 @@ console.log(selectedCard)
         />
         <Footer />
 
-        <PopupWIthForm
+        <PopupWithForm
           name='add-element'
           title='Новое место'
           isOpen={isAddPlacePopupOpen}
@@ -77,9 +77,9 @@ console.log(selectedCard)
             required
           />
           <span id="link-error" className="error" />
-        </PopupWIthForm>
+        </PopupWithForm>
 
-        <PopupWIthForm
+        <PopupWithForm
           name='edit-profile'
           title='Редактировать профиль'
           isOpen={isEditProfilePopupOpen}
@@ -108,9 +108,9 @@ console.log(selectedCard)
             required
           />
           <span id="content-error" className="error" />
-        </PopupWIthForm>
+        </PopupWithForm>
 
-        <PopupWIthForm
+        <PopupWithForm
           name='add-avatar'
           title='Обновить аватар'
           isOpen={isEditAvatarPopupOpen}
@@ -126,7 +126,7 @@ console.log(selectedCard)
             required
           />
           <span id="avatar-error" className="error" />
-        </PopupWIthForm>
+        </PopupWithForm>
 
         <ImagePopup onClose={closeAllPopups} card={selectedCard} />
       </div>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const PopupWIthForm = ({children, name, title, isOpen, container, onClose}) => {
+const PopupWithForm = ({children, name, title, isOpen, container, onClose}) => {
   return (
     <div className={`popup popup_type_${name} ${isOpen ? "popup_open" : ""}`}>
       <div className="popup__form">
@@ -20,4 +20,4 @@ const PopupWIthForm = ({children, name, title, isOpen, container, onClose}) => {
   )
 };
 
-export default PopupWIthForm;
+export default PopupWithForm;
