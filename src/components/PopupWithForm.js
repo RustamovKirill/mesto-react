@@ -11,7 +11,7 @@ const PopupWithForm = ({children, name, title, isOpen, container, onClose}) => {
           onClick={onClose}
         />
         <h2 className="popup__title">{title}</h2>
-        <form name="name" className={`input ${container}`}>
+        <form name={name} className={`input ${container}`}>
           { children }
           <button type="submit" className="input__button-save" aria-label="кнопка сохранить">Сохранить</button>
         </form>
